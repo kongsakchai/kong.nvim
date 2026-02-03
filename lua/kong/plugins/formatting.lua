@@ -1,18 +1,18 @@
-return {
-    -- {
-    --     "stevearc/conform.nvim",
-    --     dependencies = { "mason.nvim" },
-    --     lazy = true,
-    --     cmd = "ConformInfo",
-    --     keys = {
-    --         {
-    --             "<leader>fm",
-    --             function()
-    --                 require("conform").format({ formatters = { "injected" }, timeout_ms = 3000 })
-    --             end,
-    --             mode = { "n", "v" },
-    --             desc = "Format file or range (in visual mode)",
-    --         },
-    --     },
-    -- }
+local M = {
+    'stevearc/conform.nvim',
+    opts = {},
 }
+
+function M.config()
+    require("conform").setup({
+        formatters_by_ft = {
+            go = { "goimports", "gofumpt" },
+        },
+        format_on_save = {
+            timeout_ms = 300,
+            lsp_format = "fallback",
+        },
+    })
+end
+
+return M
