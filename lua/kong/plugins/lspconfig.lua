@@ -1,5 +1,5 @@
 local M = {
-    "neovim/nvim-lspconfig",
+    "neovim/nvim-lspconfig"
 }
 
 return M

@@ -27,4 +27,13 @@ local M = {
     }
 }
 
+vim.lsp.config("gopls", {
+    settings = {
+        gopls = {
+            semanticTokens = true,
+        },
+    },
+})
+vim.lsp.enable("gopls")
+
 return M

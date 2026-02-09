@@ -4,6 +4,11 @@ local M = {
     cmd = "Trouble",
     keys = {
         {
+            "<leader>B",
+            "<cmd>Trouble symbols toggle focus=false<cr>",
+            desc = "Outline",
+        },
+        {
             "<leader>xx",
             "<cmd>Trouble diagnostics toggle<cr>",
             desc = "Diagnostics (Trouble)",
@@ -12,11 +17,6 @@ local M = {
             "<leader>xX",
             "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
             desc = "Buffer Diagnostics (Trouble)",
-        },
-        {
-            "<leader>B",
-            "<cmd>Trouble symbols toggle focus=false<cr>",
-            desc = "Symbols (Trouble)",
         },
         {
             "<leader>xl",

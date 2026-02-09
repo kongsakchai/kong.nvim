@@ -13,6 +13,23 @@ local M = {
             {
                 mode = { "n", "x" },
                 {
+                    "<leader>[",
+                    icon = "󰒮 ",
+                },
+                {
+                    "<leader>]",
+                    icon = "󰒭 ",
+                },
+                {
+                    "<leader>c",
+                    icon = " ",
+                    group = "Code"
+                },
+                {
+                    "<leader>e",
+                    icon = "󰉋 "
+                },
+                {
                     "<leader>b",
                     group = "buffer",
                     expand = function()
@@ -27,10 +44,76 @@ local M = {
                         return require("which-key.extras").expand.win()
                     end,
                 },
+                {
+                    "<leader>f",
+                    group = "telescope",
+                    icon = " "
+                },
+                {
+                    "<leader>x",
+                    group = "trouble",
+                    icon = " "
+                },
+                {
+                    "<leader>t",
+                    group = "Terminal",
+                },
+                {
+                    "<leader>l",
+                    group = "LSP",
+                    icon = "󰒋 "
+                },
+                {
+                    "<leader>ld",
+                    desc = "Definition",
+                    icon = "󰊕 "
+                },
+                {
+                    "<leader>lD",
+                    desc = "Declaration",
+                    icon = "󰊕 "
+                },
+                {
+                    "<leader>lr",
+                    desc = "References",
+                    icon = "󰈇 "
+                },
+                {
+                    "<leader>li",
+                    desc = "Implementation",
+                    icon = "󰡱 "
+                },
+                {
+                    "<leader>lt",
+                    desc = "Type Definition",
+                    icon = "󰆧 "
+                },
+                {
+                    "<leader>s",
+                    group = "Split",
+                    icon = " "
+                },
+                {
+                    "<leader>s",
+                    group = "Split horizontal",
+                    icon = " "
+                },
+                {
+                    "<leader>s",
+                    group = "Split Vertical",
+                    icon = " "
+                },
             }
         }
     },
     keys = {
+        {
+            "<leader>b",
+            group = "buffer",
+            expand = function()
+                return require("which-key.extras").expand.buf()
+            end,
+        },
         {
             "<leader>?",
             function()
@@ -38,12 +121,6 @@ local M = {
             end,
             desc = "Buffer Local Keymaps (which-key)",
         },
-        -- {
-        --     "<leader>e",
-        --     "<cmd>NvimTreeToggle<cr>",
-        --     desc = "Explorer",
-        --     mode = { "n" }
-        -- },
     },
 }
 

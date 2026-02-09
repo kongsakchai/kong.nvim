@@ -21,6 +21,9 @@ spec("kong.plugins.which-key")
 
 -- Lang
 spec("kong.lang.go")
+spec("kong.lang.svelte")
+spec("kong.lang.prettier")
+spec("kong.lang.typescript")
 
 require("kong.lazy")
 require("kong.post")

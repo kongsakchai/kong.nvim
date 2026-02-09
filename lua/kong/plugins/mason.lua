@@ -8,7 +8,14 @@ local M = {
 
 function M.config()
     require("mason").setup({
-        ensure_installed = { "gopls", "goimports", "gofumpt" }
+        ensure_installed = {
+            "gopls",
+            "goimports",
+            "gofumpt",
+            "svelte-language-server",
+            "typescript-language-server",
+            "prettier"
+        }
     })
     require("mason-lspconfig").setup()
 end

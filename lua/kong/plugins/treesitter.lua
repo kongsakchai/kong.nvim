@@ -6,7 +6,16 @@ local M = {
 
 function M.config()
     require("nvim-treesitter.config").setup({
-        ensure_installed = { "go", "gomod", "gosum" },
+        ensure_installed = {
+            "go",
+            "gomod",
+            "gosum",
+            "svelte",
+            "html",
+            "css",
+            "javascript",
+            "typescript",
+        },
         highlight = { enable = true },
         indent = { enable = true },
         folds = { enable = true },
