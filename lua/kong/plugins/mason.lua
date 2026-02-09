@@ -7,17 +7,17 @@ local M = {
 }
 
 function M.config()
-    require("mason").setup({
+    require("mason").setup()
+    require("mason-lspconfig").setup({
         ensure_installed = {
             "gopls",
             "goimports",
             "gofumpt",
-            "svelte-language-server",
-            "typescript-language-server",
+            "svelte",
+            "ts_ls",
             "prettier"
         }
     })
-    require("mason-lspconfig").setup()
 end
 
 return M
