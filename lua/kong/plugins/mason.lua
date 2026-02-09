@@ -3,6 +3,7 @@ local M = {
     dependencies = {
         "mason-org/mason.nvim",
         "neovim/nvim-lspconfig",
+        "WhoIsSethDaniel/mason-tool-installer.nvim",
     },
 }
 
@@ -11,12 +12,18 @@ function M.config()
     require("mason-lspconfig").setup({
         ensure_installed = {
             "gopls",
-            "goimports",
-            "gofumpt",
             "svelte",
             "ts_ls",
-            "prettier"
         }
+    })
+
+    require("mason-tool-installer").setup({
+        ensure_installed = {
+            "goimports",
+            "gofumpt",
+            "prettier",
+        },
+        auto_update = true,
     })
 end
 
