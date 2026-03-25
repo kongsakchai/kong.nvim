@@ -13,7 +13,7 @@ function M.config()
         ensure_installed = {
             "gopls",
             "svelte",
-            "ts_ls",
+            "tsgo",
         }
     })
 

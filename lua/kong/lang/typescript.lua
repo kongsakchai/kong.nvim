@@ -1,4 +1,4 @@
-vim.lsp.config("ts_ls", {
+vim.lsp.config("tsgo", {
     on_attach = function(client, bufnr)
         -- Remove Unused Imports
         vim.keymap.set('n', '<leader>cf', function()
