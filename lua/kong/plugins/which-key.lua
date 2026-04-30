@@ -94,12 +94,12 @@ local M = {
                     icon = " "
                 },
                 {
-                    "<leader>s",
+                    "<leader>ss",
                     group = "Split horizontal",
                     icon = " "
                 },
                 {
-                    "<leader>s",
+                    "<leader>sv",
                     group = "Split Vertical",
                     icon = " "
                 },

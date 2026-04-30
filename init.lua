@@ -5,6 +5,7 @@ require("kong.core.keymaps")
 -- Spec
 spec("kong.plugins.autocomplete")
 spec("kong.plugins.bufferline")
+spec("kong.plugins.color-hl")
 spec("kong.plugins.colorscheme")
 spec("kong.plugins.formatting")
 spec("kong.plugins.lspconfig")
@@ -27,3 +28,4 @@ spec("kong.lang.typescript")
 
 require("kong.lazy")
 require("kong.post")
+

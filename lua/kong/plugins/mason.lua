@@ -14,6 +14,8 @@ function M.config()
             "gopls",
             "svelte",
             "tsgo",
+			"tailwindcss",
+			"eslint",
         }
     })
 
